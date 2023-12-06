@@ -120,7 +120,7 @@ export default function MemoTest() {
       
       <h2 className='font-medium mt-1'>Pone en practica tu memoria jugando al MemoTest.</h2>
 
-      <p className='flex text-sm bg-gradient-to-r from-indigo-700 to-indigo-400 font-mono py-1.5 px-3 text-white rounded-md w-fit mt-2'>Juego Desarrollado por
+      <p className='flex text-[.7em] sm:text-sm bg-gradient-to-r from-indigo-700 to-indigo-400 font-mono py-1.5 px-3 text-white rounded-md w-fit mt-2'>Juego Desarrollado por
         <a
           className='ml-2 font-semibold flex items-center gap-1.5 hover:underline'
           href="https://github.com/martinvirun"
@@ -144,7 +144,7 @@ export default function MemoTest() {
             className='relative overflow-hidden fadeIn'
           >
             <img
-              className={"object-cover h-full border rounded-xl transition duration-300 p-2 "+
+              className={"object-contain h-full border rounded-xl transition duration-300 p-1 "+
                 (image.isFlipped? "opacity-100" : "[transform:rotateY(180deg)] opacity-0")
               }
               src={image.isFlipped? image.src : "/logo_pescar.png"}

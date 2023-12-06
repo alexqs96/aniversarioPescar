@@ -23,9 +23,9 @@ export default function Carousel() {
 
   return (
     <section className='fadeIn flex flex-col gap-5'>
-      <h3 className='text-4xl font-semibold'>Nuestros Alumnos ❤️</h3>
+      <h3 className='text-3xl sm:text-4xl font-semibold'>Nuestros Alumnos ❤️</h3>
       <div className='flex relative'>
-        <span className='absolute left-0 inset-y-0 z-10 w-20 min-h-full bg-gradient-to-r from-white to-transparent block' />
+        <span className='absolute left-0 inset-y-0 z-10 w-5 lg:w-20 min-h-full bg-gradient-to-r from-white to-transparent block' />
         <Swiper
           slidesPerView={2}
           longSwipesMs={700}
@@ -57,7 +57,7 @@ export default function Carousel() {
             ))
           }
         </Swiper>
-        <span className='absolute right-0 inset-y-0 z-10 w-20 min-h-full bg-gradient-to-l from-white to-transparent block' />
+        <span className='absolute right-0 inset-y-0 z-10 w-5 lg:w-20 min-h-full bg-gradient-to-l from-white to-transparent block' />
       </div>
     </section>
   )

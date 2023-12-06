@@ -37,12 +37,12 @@ export default function Header(){
 
   return (
     <header className="sticky top-0 bg-white/80 backdrop-blur-md z-50">
-      <div className="h-20 pb-2 max-lg:pt-4 lg:pt-2 max-w-screen-xl mx-auto w-[90%] flex max-lg:flex-col items-center gap-5">
-        <div className={"flex items-center justify-between max-lg:w-full min-w-max z-50"+(openMenu? " max-lg:fixed max-w-[90%] mx-auto" : "")}>
+      <div className="h-20 pb-2 max-lg:pt-0.5 max-lg:flex-col max-w-screen-xl mx-auto w-[90%] flex items-center gap-5">
+        <div className={"flex items-center justify-between max-lg:w-full min-w-max z-50 "+(openMenu? " max-lg:fixed top-0 max-w-[90%] mx-auto" : "")}>
           <Link 
             to="/"
             onClick={() => setOpenMenu(false)}
-            className="font-medium flex items-center gap-0.5 group"
+            className="font-medium flex items-center gap-0.5 group h-20"
           >
             <LogoPescar size="4.5em" className="h-fit group-hover:-rotate-3 transition-transform duration-300 origin-bottom-left" />
             <div className="relative flex flex-col w-full -mb-0.5 group-hover:rotate-2 duration-300 transition-transform">
@@ -67,7 +67,7 @@ export default function Header(){
           className={
           "flex items-center gap-3 lg:gap-1 w-full max-lg:flex-col max-lg:overflow-hidden transition-all duration-200 max-lg:fixed z-40 "
           +
-          (openMenu? " max-lg:h-[100dvh] bg-white top-0 pt-28" : " max-lg:hidden")
+          (openMenu? " max-lg:h-[100dvh] bg-white top-0 pt-20" : " max-lg:hidden")
           }
         >
           {
@@ -78,7 +78,7 @@ export default function Header(){
                 style={{ animationDelay: `${index * 0.15}s` }}
                 onClick={() => setOpenMenu(false)}
                 className={({isActive, isPending}) => (
-                  "max-lg:fadeIn max-lg:w-[90%] max-lg:text-3xl transition-colors duration-75 flex items-center gap-2 lg:gap-1 py-1.5 px-3 font-medium bg-gradient-to-t hover:from-[#fc7203] hover:to-orange-400 hover:text-white rounded-xl"+
+                  "max-lg:fadeIn max-lg:w-[90%] max-lg:mx-auto max-lg:text-3xl transition-colors duration-75 flex items-center gap-2 lg:gap-1 py-1.5 px-3 font-medium bg-gradient-to-t hover:from-[#fc7203] hover:to-orange-400 hover:text-white rounded-xl"+
                   (isActive? " bg-gradient-to-t from-[#fc7203] to-orange-400 text-white" : "")+
                   (isPending? " animate-pulse" : "")
                   )
