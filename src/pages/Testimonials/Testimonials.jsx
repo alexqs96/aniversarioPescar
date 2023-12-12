@@ -10,7 +10,7 @@ export default function Testimonials(){
             key={testimonio.id}
             className='flex max-lg:flex-col items-center gap-5 bg-gradient-to-b lg:bg-gradient-to-r from-transparent to-orange-50/50 lg:to-orange-50 rounded-2xl overflow-hidden'
           >
-            <iframe src="https://www.youtube.com/watch?v=b3PskU2RC8E" className="aspect-video lg:max-w-sm w-full" allowFullScreen />
+            <iframe src={testimonio.youtube} className="aspect-video lg:max-w-sm w-full" allowFullScreen />
             <div className='flex flex-col gap-2 p-4 lg:p-2 max-lg:mr-auto'>
               <div className='flex items-center gap-3'>
                 <img
@@ -34,7 +34,7 @@ export default function Testimonials(){
             key={testimonio.id}
             className='flex max-lg:flex-col items-center gap-5 bg-gradient-to-b lg:bg-gradient-to-r from-transparent to-orange-50/50 lg:to-orange-50 rounded-2xl overflow-hidden'
           >
-            <iframe src="https://www.youtube.com/watch?v=b3PskU2RC8E" className="aspect-video lg:max-w-sm w-full" allowFullScreen />
+            <iframe src={testimonio.youtube} className="aspect-video lg:max-w-sm w-full" allowFullScreen />
             <div className='flex flex-col gap-2 p-4 lg:p-2 max-lg:mr-auto'>
               <div className='flex items-center gap-3'>
                 <img
