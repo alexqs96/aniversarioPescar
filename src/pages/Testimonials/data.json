@@ -2,7 +2,7 @@
   [
     {
       "id": "APL421044",
-      "youtube" : "https://www.youtube.com/watch?v=b3PskU2RC8E",
+      "youtube" : "https://www.youtube.com/embed/b3PskU2RC8E",
       "name" : "Augusto Blanco",
       "photo" : "Augusto_Blanco.webp",
       "about" : "Egresado Centro Pescar Saleforce",
@@ -10,7 +10,7 @@
     },
     {
       "id": "APL414014",
-      "youtube" : "https://www.youtube.com/shorts/N9dSzETKxsA",
+      "youtube" : "https://www.youtube.com/embed/N9dSzETKxsA",
       "name" : "Francisco Encalada",
       "photo" : "Francisco_Encalada.webp",
       "about" : "Egresado Centro Pescar Saleforce",
@@ -18,7 +18,7 @@
     },
     {
       "id": "APL414624",
-      "youtube" : "https://www.youtube.com/watch?v=Q4Ye-lSKCLM",
+      "youtube" : "https://www.youtube.com/embed/Q4Ye-lSKCLM",
       "name" : "Patricio Castañero",
       "photo" : "Patricio_Castanero.webp",
       "about" : "Senior Product Engineer (Mentor)",
@@ -26,7 +26,7 @@
     },
     {
       "id": "APL425024",
-      "youtube" : "https://www.youtube.com/watch?v=d7TTdi_i4Qo",
+      "youtube" : "https://www.youtube.com/embed/d7TTdi_i4Qo",
       "name" : "Fundación Pescar",
       "photo" : "Fundacion_Pescar.webp",
       "about" : "Logros conseguidos en el año 2022",
@@ -36,7 +36,7 @@
   [
     {
       "id": "APL424924",
-      "youtube" : "https://www.youtube.com/watch?v=Is7wwTs5ZKA&t=14s",
+      "youtube" : "https://www.youtube.com/embed/Is7wwTs5ZKA&t=14s",
       "name" : "Alan Barraza",
       "photo" : "Alan_Barraza.webp",
       "about" : "Pasante área de compliance",
@@ -44,7 +44,7 @@
     },
     {
       "id": "APL4249124",
-      "youtube" : "https://www.youtube.com/watch?v=P9dhyKiaIG4",
+      "youtube" : "https://www.youtube.com/embed/P9dhyKiaIG4",
       "name" : "Nicolas Rios",
       "photo" : "Nicolas_Rios.webp",
       "about" : "Gestión de Tecnología",
@@ -52,7 +52,7 @@
     },
     {
       "id": "APL429594",
-      "youtube" : "https://www.youtube.com/watch?v=UkKJPAQpxoU",
+      "youtube" : "https://www.youtube.com/embed/UkKJPAQpxoU",
       "name" : "Oscar Quispe",
       "photo" : "Oscar_Quispe.webp",
       "about" : "Derecho",
@@ -60,7 +60,7 @@
     },
     {
       "id": "APL424923",
-      "youtube" : "https://www.youtube.com/watch?v=HO2M18OjzEQ",
+      "youtube" : "https://www.youtube.com/embed/HO2M18OjzEQ",
       "name" : "Magali Gamecho",
       "photo" : "Magali_Gamecho.webp",
       "about" : "Pasante en AML digitalizando archivos",
@@ -68,7 +68,7 @@
     },
     {
       "id": "APL4209123",
-      "youtube" : "https://www.youtube.com/watch?v=RO1yHi869U8",
+      "youtube" : "https://www.youtube.com/embed/RO1yHi869U8",
       "name" : "Keila Rojas",
       "photo" : "Keila_Rojas.webp",
       "about" : "Administración de Empresas",
