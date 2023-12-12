@@ -25,7 +25,7 @@ export default function SwiperHero() {
           modules={[EffectFade, Navigation, Pagination, Autoplay]}
           className='grid'
         >
-          <button aria-label='Ver foto anterior' className="image-swiper-button-prev absolute left-[1em] md:max-lg:left-[1.5em] lg:max-xl:left-[2em] bottom-[1.1em] p-2 sm:p-4 bg-white border rounded-full z-10 active:scale-75 duration-300 transition-transform">
+          <button aria-label='Ver foto anterior' className="image-swiper-button-prev absolute left-[0.8em] md:max-lg:left-[1.5em] lg:max-xl:left-[2em] bottom-[0.9em] p-2 sm:p-4 bg-white border rounded-full z-10 active:scale-75 duration-300 transition-transform">
             <FaChevronLeft size={"1.3em"} />
           </button>
           {
@@ -35,7 +35,7 @@ export default function SwiperHero() {
             </SwiperSlide>
             ))
           }
-          <button aria-label='Ver foto siguiente' className="image-swiper-button-next absolute right-[1em] md:max-lg:right-[1.5em] lg:max-xl:right-[2em] top-[1.1em] p-2 sm:p-4 bg-white border rounded-full z-10 active:scale-75 duration-300 transition-transform">
+          <button aria-label='Ver foto siguiente' className="image-swiper-button-next absolute right-[0.8em] md:max-lg:right-[1.5em] lg:max-xl:right-[2em] top-[0.9em] p-2 sm:p-4 bg-white border rounded-full z-10 active:scale-75 duration-300 transition-transform">
             <FaChevronRight size={"1.3em"} />
           </button>
         </Swiper>

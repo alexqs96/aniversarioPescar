@@ -44,9 +44,9 @@ export default function Header(){
             onClick={() => setOpenMenu(false)}
             className="font-medium flex items-center gap-0.5 group h-20"
           >
-            <LogoPescar size="4.5em" className="h-fit group-hover:-rotate-3 transition-transform duration-300 origin-bottom-left" />
-            <div className="relative flex flex-col w-full -mb-0.5 group-hover:rotate-2 duration-300 transition-transform">
-              <span className="group-hover:opacity-100 opacity-0 transition duration-300 w-3 h-[0.005rem] bg-[#1f288ba6] absolute -top-1 rotate-[70deg] -left-2.5"></span>
+            <LogoPescar size="4.5em" className="h-fit sm:group-hover:-rotate-3 transition-transform duration-300 origin-bottom-left" />
+            <div className="relative flex flex-col w-full -mb-0.5 sm:group-hover:rotate-2 duration-300 transition-transform">
+              <span className="sm:group-hover:opacity-100 opacity-0 transition duration-300 w-3 h-[1px] bg-[#1f288ba6] absolute -top-1 rotate-[70deg] -left-2.5"></span>
               <small>Fundación Pescar</small>
               <small className="-mt-1">20º Aniversario</small>
             </div>

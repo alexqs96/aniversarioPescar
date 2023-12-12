@@ -1,0 +1,35 @@
+[
+  {
+    "id" : 1,
+    "name" : "Bunker 3D",
+    "photo" : "bunker3d.webp",
+    "ownerPic" : "nahuel_gonzalez.webp",
+    "owner" : "Nahuel Gonzalez",
+    "email" : "bunker3d.ad@gmail.com",
+    "instagram" : "bunker3d.ad",
+    "linkedin" : null,
+    "info" : "Este Emprendimiento se dedica al diseño y fabricación de dijes únicos y personalizados que permiten a sus clientes expresar su estilo y creatividad en cada detalle."
+  },
+  {
+    "id" : 2,
+    "name" : "Luxe3D",
+    "photo" : "luxe3d.webp",
+    "ownerPic" : "dylan_quiroga.webp",
+    "owner" : "Dylan Quiroga",
+    "email" : null,
+    "instagram" : "luxe3d",
+    "linkedin" : null,
+    "info" : "Este Emprendimiento se especializa en la creación de dijes exclusivos que permiten a sus clientes expresar su individualidad y estilo personal a través de diseños significativos y únicos."
+  },
+  {
+    "id" : 3,
+    "name" : "Bunker 3D",
+    "photo" : "neoretro3d.webp",
+    "ownerPic" : "nicolas_leonardi.webp",
+    "owner" : "Nicolas Leonardi",
+    "email" : null,
+    "instagram" : "neoretro3d",
+    "linkedin" : null,
+    "info" : "Este Emprendimiento se especializa en la confección artesanal de dijes a medida que reflejan la singularidad de cada cliente. Cada pieza es una obra maestra única, diseñada para expresar estilo y creatividad en su forma más auténtica."
+  }
+]

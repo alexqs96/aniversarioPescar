@@ -4,9 +4,9 @@ import Layout from "./layout";
 import NotFound from "./not-found";
 
 const Home = lazy(() => import("./pages/Home/Home"))
-const Games = lazy(() => import("./pages/Juegos/Games"))
-const TriviaPescar = lazy(() => import("./pages/Juegos/TriviaPescar/TriviaPescar"))
-const MemoTest = lazy(() => import("./pages/Juegos/MemoTest/MemoTest"))
+const Games = lazy(() => import("./pages/Juegos/Page"))
+const TriviaPescar = lazy(() => import("./pages/Juegos/TriviaPescar/Page"))
+const MemoTest = lazy(() => import("./pages/Juegos/MemoTest/Page"))
 const Students = lazy(() => import("./pages/Students/Students"))
 const Testimonials = lazy(() => import("./pages/Testimonials/Testimonials"))
 const Entrepreneurs = lazy(() => import("./pages/Entrepreneurs/Entrepreneurs"))
