@@ -1,15 +1,7 @@
-import { lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layout";
 import NotFound from "./not-found";
-
-const Home = lazy(() => import("./pages/Home/Home"))
-const Games = lazy(() => import("./pages/Juegos/Page"))
-const TriviaPescar = lazy(() => import("./pages/Juegos/TriviaPescar/Page"))
-const MemoTest = lazy(() => import("./pages/Juegos/MemoTest/Page"))
-const Students = lazy(() => import("./pages/Students/Students"))
-const Testimonials = lazy(() => import("./pages/Testimonials/Testimonials"))
-const Entrepreneurs = lazy(() => import("./pages/Entrepreneurs/Entrepreneurs"))
+import { Home, Games, MemoTest, TriviaPescar, Students, Entrepreneurs, Testimonials } from "./pages/index" ;
 
 const router = createBrowserRouter([
   {

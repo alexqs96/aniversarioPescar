@@ -4,7 +4,7 @@ import 'swiper/css/pagination';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { confetti } from 'tsparticles-confetti';
-import { pescarCarouselImages } from '../../lib/images';
+import { pescarCarouselImages } from '../../consts';
 
 
 export default function Carousel() {
@@ -52,7 +52,7 @@ export default function Carousel() {
           {
             pescarCarouselImages.map(e => (
               <SwiperSlide key={e + "carousel"}>
-                <img src={"/pescar/" + e} alt={e} className='aspect-square object-cover rounded-2xl cursor-grab' loading='lazy' />
+                <img src={"/pescar/" + e} alt={e} className='aspect-square object-cover rounded-2xl cursor-grab bg-white border' loading='lazy' />
               </SwiperSlide>
             ))
           }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
-import { memoTestImages } from '../../../lib/images';
+import { memoTestImages } from '../../../consts';
 import { FaGithub } from 'react-icons/fa6';
 
 // Desarrollado por https://github.com/martinvirun

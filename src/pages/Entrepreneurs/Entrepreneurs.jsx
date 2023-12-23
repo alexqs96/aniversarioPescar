@@ -6,10 +6,11 @@ export default function Entrepreneurs(){
   return(
     <section className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
     {
-      emprendedores.map(emprendedor => (
+      emprendedores.map((emprendedor, index) => (
         <div
           key={emprendedor.id}
-          className='flex max-md:flex-col gap-5 border border-black/5 shadow-lg p-5 rounded-2xl'
+          style={{ animationDelay: `${index * 0.15}s` }}
+          className='fadeIn flex max-md:flex-col gap-5 border border-black/5 shadow-lg p-5 rounded-2xl'
         >
           <img
             className='w-full md:max-w-[30%] mb-auto rounded-lg'

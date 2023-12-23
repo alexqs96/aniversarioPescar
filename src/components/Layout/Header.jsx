@@ -32,28 +32,41 @@ const navLinks = [
   }
 ]
 
-export default function Header(){
+export function Header(){
   const [openMenu, setOpenMenu] = useState(false)
 
+  const handleOpenMenu = (option) => {
+    const htmlTag = document.documentElement
+
+    setOpenMenu(option)
+    if (option) {
+      htmlTag.classList.add('noScroll')
+    }
+    else
+    {
+      htmlTag.classList.remove('noScroll')
+    }
+  }
+
   return (
-    <header className="sticky top-0 bg-white/80 backdrop-blur-md z-50">
-      <div className="h-20 pb-2 max-lg:pt-0.5 max-lg:flex-col max-w-screen-xl mx-auto w-[90%] flex items-center gap-5">
-        <div className={"flex items-center justify-between max-lg:w-full min-w-max z-50 "+(openMenu? " max-lg:fixed top-0 max-w-[90%] mx-auto" : "")}>
+    <header className="sticky top-0 bg-white/80 backdrop-blur-lg z-50">
+      <div className="h-20 max-lg:pt-0.5 max-lg:flex-col max-w-screen-xl mx-auto w-[90%] flex items-center gap-5">
+        <div className={"flex items-center justify-between max-lg:bg-white/80 max-lg:backdrop-blur-lg max-lg:w-full min-w-max z-50 "+(openMenu? " max-lg:fixed top-0 max-w-[90%] mx-auto" : "")}>
           <Link 
             to="/"
-            onClick={() => setOpenMenu(false)}
+            onClick={() => handleOpenMenu(false)}
             className="font-medium flex items-center gap-0.5 group h-20"
           >
             <LogoPescar size="4.5em" className="h-fit sm:group-hover:-rotate-3 transition-transform duration-300 origin-bottom-left" />
             <div className="relative flex flex-col w-full -mb-0.5 sm:group-hover:rotate-2 duration-300 transition-transform">
               <span className="sm:group-hover:opacity-100 opacity-0 transition duration-300 w-3 h-[1px] bg-[#1f288ba6] absolute -top-1 rotate-[70deg] -left-2.5"></span>
               <small>Fundación Pescar</small>
-              <small className="-mt-1">20º Aniversario</small>
+              <small className="-mt-1">20° Aniversario</small>
             </div>
           </Link>
 
           <button
-            onClick={() => setOpenMenu(!openMenu)}
+            onClick={() => handleOpenMenu(!openMenu)}
             className={"lg:hidden hamburger" + (openMenu ? " is-active" : "")}
             aria-label="Menu"
           >
@@ -65,9 +78,9 @@ export default function Header(){
         
         <nav
           className={
-          "flex items-center gap-3 lg:gap-1 w-full max-lg:flex-col max-lg:overflow-hidden transition-all duration-200 max-lg:fixed z-40 "
+          "flex items-center gap-3 lg:gap-1 w-full max-lg:flex-col max-lg:overflow-y-scroll max-lg:pb-10 transition-all duration-200 max-lg:fixed z-40 "
           +
-          (openMenu? " max-lg:h-[100dvh] bg-white top-0 pt-20" : " max-lg:hidden")
+          (openMenu? " max-lg:h-[100dvh] max-lg:bg-white top-0 max-lg:pt-20" : " max-lg:hidden")
           }
         >
           {
@@ -76,7 +89,7 @@ export default function Header(){
                 key={link.id}
                 to={link.href}
                 style={{ animationDelay: `${index * 0.15}s` }}
-                onClick={() => setOpenMenu(false)}
+                onClick={() => handleOpenMenu(false)}
                 className={({isActive, isPending}) => (
                   "max-lg:fadeIn max-lg:w-[90%] max-lg:mx-auto max-lg:text-3xl transition-colors duration-75 flex items-center gap-2 lg:gap-1 py-1.5 px-3 font-medium bg-gradient-to-t hover:from-[#fc7203] hover:to-orange-400 hover:text-white rounded-xl"+
                   (isActive? " bg-gradient-to-t from-[#fc7203] to-orange-400 text-white" : "")+

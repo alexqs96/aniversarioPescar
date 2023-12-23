@@ -3,7 +3,7 @@ import 'swiper/css/effect-fade';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import { pescarHeroImages } from '../../lib/images';
+import { pescarHeroImages } from '../../consts';
 
 export default function SwiperHero() {
   return (
@@ -31,7 +31,7 @@ export default function SwiperHero() {
           {
             pescarHeroImages.map(e => (
             <SwiperSlide key={e} className="mask max-h-[332px] w-full cursor-grab overflow-hidden">
-              <img src={"/pescar/"+e} alt={e} className='aspect-video' loading='lazy'/>
+              <img src={"/pescar/"+e} alt={e} className='aspect-video bg-white border' loading='lazy'/>
             </SwiperSlide>
             ))
           }

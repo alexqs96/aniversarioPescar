@@ -67,7 +67,7 @@ export default function Students() {
               title={"Foto de " + dev.name}
               loading='lazy'
             />
-            <div className='flex flex-col gap-1'>
+            <div className='flex flex-col gap-1.5'>
               <span className="block text-xl truncate font-medium" title={dev.name}>
                 {dev.name}
               </span>
@@ -97,7 +97,7 @@ export default function Students() {
                 ) : null}
               </div>
 
-              <p>{dev.about}</p>
+              <small>{dev.about}</small>
             </div>
           </div>
         ))

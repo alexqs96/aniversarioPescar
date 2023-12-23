@@ -22,6 +22,10 @@ html{
 }
 
 @layer utilities{
+  .noScroll{
+    @apply max-lg:overflow-y-hidden
+  }
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
